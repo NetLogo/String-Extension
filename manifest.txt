@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Extension-Name: string
+Class-Manager: JPS__StringCM
+NetLogo-Extension-API-Version: 5.0
