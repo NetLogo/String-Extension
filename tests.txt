@@ -1,16 +1,16 @@
 StringEndsWithSuccess
   extensions [string]
-  "abcdefghijklmnop" string:ends-with "lmnop" => true
-  "abc" string:ends-with "abc" => true
-  "a" string:ends-with "a" => true
-  "a" string:ends-with "" => true
-  "" string:ends-with "" => true
+  "abcdefghijklmnop" string:ends-with? "lmnop" => true
+  "abc" string:ends-with? "abc" => true
+  "a" string:ends-with? "a" => true
+  "a" string:ends-with? "" => true
+  "" string:ends-with? "" => true
 
 StringEndsWithFailure
   extensions [string]
-  "abcdefghijklmnop" string:ends-with "lmno" => false
-  "ab" string:ends-with "abc" => false
-  "" string:ends-with "a" => false
+  "abcdefghijklmnop" string:ends-with? "lmno" => false
+  "ab" string:ends-with? "abc" => false
+  "" string:ends-with? "a" => false
 
 StringExplode
   extensions [string]
@@ -115,17 +115,17 @@ StringRegExSplit
 
 StringStartsWithSuccess
   extensions [string]
-  "abcdefghijklmnop" string:starts-with "abcd" => true
-  "abc" string:starts-with "abc" => true
-  "a" string:starts-with "a" => true
-  "a" string:starts-with "" => true
-  "" string:starts-with "" => true
+  "abcdefghijklmnop" string:starts-with? "abcd" => true
+  "abc" string:starts-with? "abc" => true
+  "a" string:starts-with? "a" => true
+  "a" string:starts-with? "" => true
+  "" string:starts-with? "" => true
 
 StringStartsWithFailure
   extensions [string]
-  "abcdefghijklmnop" string:starts-with "bcde" => false
-  "ab" string:starts-with "abc" => false
-  "" string:starts-with "a" => false
+  "abcdefghijklmnop" string:starts-with? "bcde" => false
+  "ab" string:starts-with? "abc" => false
+  "" string:starts-with? "a" => false
 
 StringTrim
   extensions [string]

@@ -7,7 +7,7 @@ This package contains the NetLogo string extension.
 The following reporters are provided:
 
  * `upper-case`, `lower-case` -- alter the letter case of strings
- * `starts-with`, `ends-with` -- match a string against the start or end of another string
+ * `starts-with?`, `ends-with?` -- match a string against the start or end of another string
  * `rex-match` -- search in strings using standard regular expressions
  * `rex-replace-first`
  * `from-file` -- read an entire file into a string with one command

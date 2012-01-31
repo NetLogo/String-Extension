@@ -7,7 +7,7 @@ public class StringExtension extends DefaultClassManager
 {
     public void load ( PrimitiveManager pM )
     {
-        pM.addPrimitive ( "ends-with",                 new EndsWith () ) ;
+        pM.addPrimitive ( "ends-with?",                new EndsWith () ) ;
         pM.addPrimitive ( "explode",                   new Explode () ) ;
         pM.addPrimitive ( "from-file",                 new FromFile () ) ;
         pM.addPrimitive ( "hash-code",                 new HashCode () ) ;
@@ -17,7 +17,7 @@ public class StringExtension extends DefaultClassManager
         pM.addPrimitive ( "rex-replace-all",           new RegExReplaceAll () ) ;
         pM.addPrimitive ( "rex-replace-first",         new RegExReplaceFirst () ) ;
         pM.addPrimitive ( "rex-split",                 new RegExSplit () ) ;
-        pM.addPrimitive ( "starts-with",               new StartsWith () ) ;
+        pM.addPrimitive ( "starts-with?",              new StartsWith () ) ;
         pM.addPrimitive ( "trim",                      new Trim () ) ;
         pM.addPrimitive ( "upper-case",                new UpperCase () ) ;
     }
