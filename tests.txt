@@ -21,11 +21,11 @@ StringExplode
 
 StringFromFileSuccess
   extensions [string]
-  string:from-file "./extensions/string/testTextFile.txt" => "chimpanzees are mean"
+  string:from-file "./extensions/string/test-input.txt" => "chimpanzees are mean"
 
 StringFromFileFailure
   extensions [string]
-  string:from-file "./extensions/string/testTextFile.tx" => ERROR Extension exception: ./extensions/string/testTextFile.tx (No such file or directory)
+  string:from-file "./extensions/string/test-input.tx" => ERROR Extension exception: ./extensions/string/test-input.tx (No such file or directory)
 
 StringHashCode
   extensions [string]
