@@ -64,7 +64,7 @@ StringRegExMatchSuccess
   string:rex-match ".?" "a" => true
   string:rex-match ".?" "" => true
 
-StringRegExMatchFailuire
+StringRegExMatchFailure
   extensions [string]
   string:rex-match ".*\\|.*" "monkeys are cool" => false
   string:rex-match "monkeys" "monkeys!" => false
