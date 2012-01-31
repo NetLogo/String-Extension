@@ -21,6 +21,17 @@ Use the NETLOGO environment variable to tell the Makefile which NetLogo.jar to c
 
 If compilation succeeds, `string.jar` will be created.
 
+## Wish list
+
+Ideas for possible additional primitives:
+
+ * `ascii-code <character>` -- returns the ASCII index of the given character (the first character of the string), or 0 for non-ASCII characters
+ * `from-ascii <integer>` -- returns the ASCII character corresponding to the given small integer index
+ * `last-index-of <needle> <haystack>` -- reports the index of the last occurrence of needle in haystack, or false, if needle does not occur
+ * `split-on-character <string> <single-char-delimiter>` -- reports a list by splitting string using the given single character`
+ * `split-on-string <string> <string-delimiter>` -- reports a list formed by splitting string using the string-delimiter
+ * `position-regex <regex-needle> <haystack>`
+
 ## Credits
 
 The string extension was written by James Steiner.
