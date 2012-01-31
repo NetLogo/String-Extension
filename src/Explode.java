@@ -11,7 +11,7 @@ import org.nlogo.api.Syntax;
 public class Explode extends DefaultReporter
 {
     // take one string as input, report a list 
-	
+    
     public Syntax getSyntax()
     {
         return Syntax.reporterSyntax(
@@ -25,9 +25,9 @@ public class Explode extends DefaultReporter
         // use typesafe helper method from
         // org.nlogo.api.Argument to access argument
         String s = args[0].getString();
-		String c = "" ;
-		
-		int len = s.length() ;
+        String c = "" ;
+        
+        int len = s.length() ;
 
         // make an empty list object to hold the new list
         LogoListBuilder list = new LogoListBuilder();

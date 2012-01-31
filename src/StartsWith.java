@@ -9,10 +9,10 @@ import org.nlogo.api.Syntax;
 
 public class StartsWith extends DefaultReporter
 {   
-	//  INFIX  haystack starts-with needle
-	
+    //  INFIX  haystack starts-with needle
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             Syntax.StringType(), new int[] { Syntax.StringType() }, Syntax.BooleanType(), Syntax.NormalPrecedence()
         ) ;
@@ -23,13 +23,13 @@ public class StartsWith extends DefaultReporter
     {
         // use typesafe helper method from
         // org.nlogo.api.Argument to access argument
-		
+        
         String hayStack = args[0].getString() ;
         String needle = args[1].getString() ;
 
-		Boolean result = new Boolean( hayStack.startsWith(needle) ) ;
-        	
-		return result ;
+        Boolean result = new Boolean( hayStack.startsWith(needle) ) ;
+            
+        return result ;
 
     }
 }

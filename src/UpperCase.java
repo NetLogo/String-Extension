@@ -10,9 +10,9 @@ import org.nlogo.api.Syntax;
 public class UpperCase extends DefaultReporter
 {
     // take one string as input, report a string
-	
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
                 new int[]{ Syntax.StringType() }, Syntax.StringType()
         ) ;

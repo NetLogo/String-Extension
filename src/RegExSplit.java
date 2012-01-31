@@ -11,9 +11,9 @@ import org.nlogo.api.Syntax;
 public class RegExSplit extends DefaultReporter
 {
     // rex-split haystack (at) regex-needle
-	
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType(), Syntax.StringType()}, Syntax.ListType()
         ) ;

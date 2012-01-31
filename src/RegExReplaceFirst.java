@@ -11,8 +11,8 @@ public class RegExReplaceFirst extends DefaultReporter
 {
     // take three strings as input, report a  string , replace first occurance of regex  in original with replacement
     
-	public Syntax getSyntax()
-	{
+    public Syntax getSyntax()
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType(), Syntax.StringType(), Syntax.StringType()}, Syntax.StringType()
         ) ;
@@ -28,7 +28,7 @@ public class RegExReplaceFirst extends DefaultReporter
         String hayStack = args[1].getString() ;
         String replacement = args[2].getString() ;
 
-		return args[1].getString().replaceFirst(args[0].getString(), args[2].getString() ) ;
-		
+        return args[1].getString().replaceFirst(args[0].getString(), args[2].getString() ) ;
+        
     }
 }

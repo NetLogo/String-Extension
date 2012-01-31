@@ -10,9 +10,9 @@ import org.nlogo.api.Syntax;
 public class LowerCase extends DefaultReporter
 {
     // take one string as input, report a string
-	
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType()}, Syntax.StringType()
         ) ;
@@ -21,11 +21,11 @@ public class LowerCase extends DefaultReporter
     public Object report(Argument args[], Context context)
         throws ExtensionException, LogoException
     {
-		// use typesafe helper method from 
+        // use typesafe helper method from 
         // org.nlogo.api.Argument to access argument
-		// convert to lower case and return result
+        // convert to lower case and return result
         String s = args[0].getString().toLowerCase() ;
-		
-		return s ;
+        
+        return s ;
     }
 }

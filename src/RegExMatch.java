@@ -9,10 +9,10 @@ import org.nlogo.api.Syntax;
 
 public class RegExMatch  extends DefaultReporter
 {   
-	// rex-match  needle  haystack // reports true if the regular expression matches the string
+    // rex-match  needle  haystack // reports true if the regular expression matches the string
     
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             new int[] { Syntax.StringType(), Syntax.StringType() }, Syntax.BooleanType()
         ) ;
@@ -27,8 +27,8 @@ public class RegExMatch  extends DefaultReporter
         String hayStack = args[1].getString() ;
         
         Boolean result = new Boolean (hayStack.matches(regexNeedle) ) ;
-		
-		return result ;
+        
+        return result ;
 
     }
 }

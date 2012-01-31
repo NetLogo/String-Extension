@@ -9,10 +9,10 @@ import org.nlogo.api.Syntax;
 
 public class EndsWith extends DefaultReporter
 {
-	// INFIX  haystack ends-with needle
+    // INFIX  haystack ends-with needle
     
-	public Syntax getSyntax()
-	{
+    public Syntax getSyntax()
+    {
         return Syntax.reporterSyntax(
             Syntax.StringType(), new int[] { Syntax.StringType() }, Syntax.BooleanType(), Syntax.NormalPrecedence()
         ) ;
@@ -29,6 +29,6 @@ public class EndsWith extends DefaultReporter
         Boolean result = new Boolean(hayStack.endsWith(needle) ) ;
         
         return result ;
-		
+        
     }
 } 

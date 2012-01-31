@@ -10,9 +10,9 @@ import org.nlogo.api.Syntax;
 public class Trim extends DefaultReporter
 {
     // take one string as input, report a string
-	
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType()}, Syntax.StringType()
         ) ;
@@ -26,6 +26,6 @@ public class Trim extends DefaultReporter
         // trim and return trimmed result
         String s = args[0].getString().trim() ;
 
-		return s ;
+        return s ;
     }
 }

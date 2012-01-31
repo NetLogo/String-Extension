@@ -13,9 +13,9 @@ import java.io.FileReader;
 public class FromFile extends DefaultReporter
 {
     // take one string (filename) as input, report a string containing the file contents
-	
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType()}, Syntax.StringType()
         ) ;

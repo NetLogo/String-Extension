@@ -11,8 +11,8 @@ public class RegExReplaceAll extends DefaultReporter
 {
     // rex-replace-all (occurances of) regex-needle (in) haystack (with) replacement
     
-	public Syntax getSyntax()
-	{
+    public Syntax getSyntax()
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType(), Syntax.StringType(), Syntax.StringType()}, Syntax.StringType()
         ) ;
@@ -28,7 +28,7 @@ public class RegExReplaceAll extends DefaultReporter
         String hayStack = args[1].getString() ;
         String replacement = args[2].getString() ;
 
-		return args[1].getString().replaceAll(args[0].getString(), args[2].getString() ) ;
+        return args[1].getString().replaceAll(args[0].getString(), args[2].getString() ) ;
 
     }
 }

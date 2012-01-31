@@ -11,9 +11,9 @@ import java.security.*;
 public class MessageDigest5 extends DefaultReporter
 {
     // take as input the algorithm to use, and the string to encode, report the MessageDigest of that string as a string
-	
+    
     public Syntax getSyntax()
-	{
+    {
         return Syntax.reporterSyntax(
             new int[] {Syntax.StringType()}, Syntax.StringType()
         ) ;
@@ -26,28 +26,28 @@ public class MessageDigest5 extends DefaultReporter
         // org.nlogo.api.Argument to access argument
         String mdtype = "MD5" ;
         String input = args[0].getString() ;
-		String result = "" ;
+        String result = "" ;
 
         byte[] defaultBytes = input.getBytes() ;
         try
-		{
+        {
              MessageDigest algorithm = MessageDigest.getInstance( mdtype ) ;
              algorithm.reset() ;
              algorithm.update( defaultBytes ) ;
 
-			 byte messageDigest[] = algorithm.digest() ;
+             byte messageDigest[] = algorithm.digest() ;
 
              StringBuffer hexString = new StringBuffer() ;
 
-			 for ( int i=0; i<messageDigest.length; i++ )
-			 {
+             for ( int i=0; i<messageDigest.length; i++ )
+             {
                   hexString.append( Integer.toHexString( 0xFF & messageDigest[i] ) ) ;
              }
 
              result = hexString.toString() ;
 
         }catch( NoSuchAlgorithmException nsae )
-		{
+        {
         }
         return result ;
     }
