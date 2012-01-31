@@ -34,7 +34,7 @@ Ideas for possible additional primitives:
 
 ## Credits
 
-The string extension was written by James Steiner.
+The string extension was written by James Steiner of [turtleZERO.com](http://turtlezero.com/).
 
 ## Terms of Use
 
