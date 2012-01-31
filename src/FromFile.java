@@ -1,4 +1,5 @@
-// package com.turtlezero.string; 
+package org.nlogo.extensions.string;
+
 import org.nlogo.api.Argument;
 import org.nlogo.api.Context;
 import org.nlogo.api.DefaultReporter;
@@ -9,7 +10,7 @@ import org.nlogo.api.Syntax;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class JPS_FromFile extends DefaultReporter
+public class FromFile extends DefaultReporter
 {
     // take one string (filename) as input, report a string containing the file contents
 	

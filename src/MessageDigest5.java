@@ -1,4 +1,5 @@
-// package com.turtlezero.string;
+package org.nlogo.extensions.string;
+
 import org.nlogo.api.Argument;
 import org.nlogo.api.Context;
 import org.nlogo.api.DefaultReporter;
@@ -7,8 +8,7 @@ import org.nlogo.api.LogoException;
 import org.nlogo.api.Syntax;
 import java.security.*;
 
-
-public class JPS_MessageDigest5 extends DefaultReporter
+public class MessageDigest5 extends DefaultReporter
 {
     // take as input the algorithm to use, and the string to encode, report the MessageDigest of that string as a string
 	

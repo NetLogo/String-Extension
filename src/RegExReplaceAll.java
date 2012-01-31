@@ -1,4 +1,5 @@
-// package com.turtlezero.string; 
+package org.nlogo.extensions.string;
+
 import org.nlogo.api.Argument;
 import org.nlogo.api.Context;
 import org.nlogo.api.DefaultReporter;
@@ -6,8 +7,7 @@ import org.nlogo.api.ExtensionException;
 import org.nlogo.api.LogoException;
 import org.nlogo.api.Syntax;
 
-
-public class JPS_RegExReplaceAll extends DefaultReporter
+public class RegExReplaceAll extends DefaultReporter
 {
     // rex-replace-all (occurances of) regex-needle (in) haystack (with) replacement
     

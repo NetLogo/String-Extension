@@ -1,4 +1,5 @@
-// package com.turtlezero.string; 
+package org.nlogo.extensions.string;
+
 import org.nlogo.api.Argument;
 import org.nlogo.api.Context;
 import org.nlogo.api.DefaultReporter;
@@ -7,8 +8,7 @@ import org.nlogo.api.LogoException;
 import org.nlogo.api.LogoListBuilder;
 import org.nlogo.api.Syntax;
 
-
-public class JPS_RegExSplit extends DefaultReporter
+public class RegExSplit extends DefaultReporter
 {
     // rex-split haystack (at) regex-needle
 	

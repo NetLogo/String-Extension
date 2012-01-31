@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Extension-Name: string
-Class-Manager: JPS__StringCM
+Class-Manager: org.nlogo.extensions.string.StringExtension
 NetLogo-Extension-API-Version: 5.0

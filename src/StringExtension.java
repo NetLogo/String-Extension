@@ -1,26 +1,25 @@
-// package com.turtlezero.string;
+package org.nlogo.extensions.string;
+
 import org.nlogo.api.DefaultClassManager;
 import org.nlogo.api.PrimitiveManager;
 
-
-
-public class JPS__StringCM extends DefaultClassManager
+public class StringExtension extends DefaultClassManager
 {
     public void load ( PrimitiveManager pM )
     {
-        pM.addPrimitive ( "ends-with",                 new JPS_EndsWith () ) ;
-        pM.addPrimitive ( "explode",                   new JPS_Explode () ) ;
-        pM.addPrimitive ( "from-file",                 new JPS_FromFile () ) ;
-        pM.addPrimitive ( "hash-code",                 new JPS_HashCode () ) ;
-        pM.addPrimitive ( "lower-case",                new JPS_LowerCase () ) ;
-        pM.addPrimitive ( "message-digest-5",          new JPS_MessageDigest5 () ) ;
-        pM.addPrimitive ( "rex-match",                 new JPS_RegExMatch () ) ;
-        pM.addPrimitive ( "rex-replace-all",           new JPS_RegExReplaceAll () ) ;
-        pM.addPrimitive ( "rex-replace-first",         new JPS_RegExReplaceFirst () ) ;
-        pM.addPrimitive ( "rex-split",                 new JPS_RegExSplit () ) ;
-        pM.addPrimitive ( "starts-with",               new JPS_StartsWith () ) ;
-        pM.addPrimitive ( "trim",                      new JPS_Trim () ) ;
-        pM.addPrimitive ( "upper-case",                new JPS_UpperCase () ) ;
+        pM.addPrimitive ( "ends-with",                 new EndsWith () ) ;
+        pM.addPrimitive ( "explode",                   new Explode () ) ;
+        pM.addPrimitive ( "from-file",                 new FromFile () ) ;
+        pM.addPrimitive ( "hash-code",                 new HashCode () ) ;
+        pM.addPrimitive ( "lower-case",                new LowerCase () ) ;
+        pM.addPrimitive ( "message-digest-5",          new MessageDigest5 () ) ;
+        pM.addPrimitive ( "rex-match",                 new RegExMatch () ) ;
+        pM.addPrimitive ( "rex-replace-all",           new RegExReplaceAll () ) ;
+        pM.addPrimitive ( "rex-replace-first",         new RegExReplaceFirst () ) ;
+        pM.addPrimitive ( "rex-split",                 new RegExSplit () ) ;
+        pM.addPrimitive ( "starts-with",               new StartsWith () ) ;
+        pM.addPrimitive ( "trim",                      new Trim () ) ;
+        pM.addPrimitive ( "upper-case",                new UpperCase () ) ;
     }
 }
 /*	// TODO / WISHLIST
