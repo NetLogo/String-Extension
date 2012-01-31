@@ -20,4 +20,3 @@ string.zip: string.jar
 	cp -rp string.jar README.md Makefile src manifest.txt string
 	zip -rv string.zip string
 	rm -rf string
-

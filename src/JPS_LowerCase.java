@@ -30,4 +30,3 @@ public class JPS_LowerCase extends DefaultReporter
 		return s ;
     }
 }
-

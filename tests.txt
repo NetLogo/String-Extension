@@ -21,7 +21,7 @@ StringExplode
 
 StringFromFileSuccess
   extensions [string]
-  string:from-file "./extensions/string/test-input.txt" => "chimpanzees are mean"
+  string:from-file "./extensions/string/test-input.txt" => "chimpanzees are mean\n"
 
 StringFromFileFailure
   extensions [string]
@@ -156,4 +156,3 @@ StringUpperCase
   string:upper-case "ab" => "AB"
   string:upper-case "a" => "A"
   string:upper-case "" => ""
-
