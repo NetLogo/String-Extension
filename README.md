@@ -2,6 +2,10 @@
 
 This package contains the NetLogo string extension.
 
+## Download
+
+see https://github.com/NetLogo/String-Extension/releases
+
 ## Using
 
 The following reporters are provided:
