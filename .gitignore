@@ -1,3 +1,8 @@
-/classes
+/classes/
+/lib/
+/tmp/
+/NetLogo.jar
+/NetLogoLite.jar
 /string.jar
+/string.jar.pack.gz
 /string.zip

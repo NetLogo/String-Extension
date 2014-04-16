@@ -15,11 +15,13 @@ The following reporters are provided:
 
 ## Building
 
-Use the NETLOGO environment variable to tell the Makefile which NetLogo.jar to compile against.  For example:
-
-    NETLOGO=/Applications/NetLogo\\\ 5.0 make
+Run `make`.
 
 If compilation succeeds, `string.jar` will be created.
+
+To run the tests in `tests.txt`, run `make test`.
+
+To build a release package, run `make string.zip`.
 
 ## Wish list
 
