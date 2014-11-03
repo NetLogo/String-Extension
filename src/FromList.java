@@ -21,11 +21,11 @@ public class FromList extends DefaultReporter{
     public Object report(Argument[] arg0, Context arg1)
              throws ExtensionException, LogoException {
         LogoList input = arg0[0].getList();
-        String theString = "";
+        StringBuilder sb = new StringBuilder();
         for (Object o : input){
-            theString = theString + String.valueOf(o);
+            sb.append(String.valueOf(o));
         }
-        return theString;
+        return sb.toString();
     }
 
 }
