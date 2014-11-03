@@ -20,7 +20,7 @@ public class StringExtension extends DefaultClassManager
         pM.addPrimitive ( "starts-with?",              new StartsWith () ) ;
         pM.addPrimitive ( "trim",                      new Trim () ) ;
         pM.addPrimitive ( "upper-case",                new UpperCase () ) ;
-	pM.addPrimitive ( "from-list", 		       new FromList() ) ;
-	pM.addPrimitive ( "to-list",                   new ToList() );
+        pM.addPrimitive ( "from-list",                 new FromList() ) ;
+        pM.addPrimitive ( "to-list",                   new ToList() );
     }
 }

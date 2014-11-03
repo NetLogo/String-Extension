@@ -10,25 +10,22 @@ import org.nlogo.api.LogoListBuilder;
 import org.nlogo.api.LogoList;
 
 public class FromList extends DefaultReporter{
-	
-	@Override
-	public Syntax getSyntax(){
-			return Syntax.reporterSyntax(
-					// we take in a string 
-					new int[] {Syntax.ListType() },
-					// and return a list
-					Syntax.StringType()); 
-	}
 
-	@Override
-	public Object report(Argument[] arg0, Context arg1)
-			throws ExtensionException, LogoException {
-		LogoList input = arg0[0].getList();
-		String theString = "";
-		for (Object o : input){
-			theString = theString + String.valueOf(o);
-		}
-		return theString;
-	}
-	
+    @Override
+    public Syntax getSyntax(){
+        return Syntax.reporterSyntax(new int[] { Syntax.ListType() },
+                                     Syntax.StringType());
+    }
+
+    @Override
+    public Object report(Argument[] arg0, Context arg1)
+             throws ExtensionException, LogoException {
+        LogoList input = arg0[0].getList();
+        String theString = "";
+        for (Object o : input){
+            theString = theString + String.valueOf(o);
+        }
+        return theString;
+    }
+
 }
