@@ -23,7 +23,7 @@ public class FromList extends DefaultReporter{
         LogoList input = arg0[0].getList();
         StringBuilder sb = new StringBuilder();
         for (Object o : input){
-            sb.append(String.valueOf(o));
+            sb.append(org.nlogo.api.Dump.logoObject(o));
         }
         return sb.toString();
     }
