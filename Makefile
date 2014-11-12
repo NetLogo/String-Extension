@@ -36,7 +36,7 @@ lib/NetLogo-tests.jar:
 	(cd lib; curl -O -f -s -S 'http://ccl.northwestern.edu/netlogo/5.0.5/NetLogo-tests.jar')
 lib/scalatest_2.9.2-1.8.jar:
 	mkdir -p lib
-	(cd lib; curl -O -f -s -S 'http://search.maven.org/remotecontent?filepath=org/scalatest/scalatest_2.9.2/1.8/scalatest_2.9.2-1.8.jar')
+	(cd lib; curl -O -f -s -S -L 'http://search.maven.org/remotecontent?filepath=org/scalatest/scalatest_2.9.2/1.8/scalatest_2.9.2-1.8.jar')
 lib/scala-library.jar:
 	mkdir -p lib
 	(cd lib; curl -O -f -s -S 'http://ccl.northwestern.edu/netlogo/5.0.5/lib/scala-library.jar')
