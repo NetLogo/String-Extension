@@ -19,6 +19,16 @@ StringExplode
   string:explode "a" => ["a"]
   string:explode "" => []
 
+StringFromList
+  extensions [string]
+  string:from-list [] => ""
+  string:from-list ["a" "bc" "def"] => "abcdef"
+  string:from-list ["" "" "" "" ""] => ""
+  string:from-list [1 "2" " 3 "] => "12 3 "
+  string:from-list [[] [] []] => "[][][]"
+  string:from-list [[1] [2 [3.4] 5]] => "[1][2 [3.4] 5]"
+  string:from-list [nobody nobody] => "nobodynobody"
+
 StringFromFileSuccess
   extensions [string]
   string:from-file "./extensions/string/test-input.txt" => "chimpanzees are mean\n"
