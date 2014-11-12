@@ -1,6 +1,6 @@
 # NetLogo string extension
 
-This package contains the NetLogo string extension.
+An unofficial extension for providing handy string-related primitives in NetLogo.
 
 ## Download
 
@@ -16,6 +16,8 @@ The following reporters are provided:
  * `rex-replace-first`
  * `from-file` -- read an entire file into a string with one command
  * `md5` -- generate the MD5 hash for a string
+ * `from-list` -- turns a list into a string
+ * `to-list` -- turns a string into a list, so it can be iterated over with `foreach`
 
 ## Building
 
