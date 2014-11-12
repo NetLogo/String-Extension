@@ -10,14 +10,16 @@ see https://github.com/NetLogo/String-Extension/releases
 
 The following reporters are provided:
 
- * `upper-case`, `lower-case` -- alter the letter case of strings
- * `starts-with?`, `ends-with?` -- match a string against the start or end of another string
- * `rex-match` -- search in strings using standard regular expressions
- * `rex-replace-first`
+ * `explode` -- turns a string into a list (of one-character strings)
  * `from-file` -- read an entire file into a string with one command
- * `md5` -- generate the MD5 hash for a string
  * `from-list` -- turns a list into a string
- * `to-list` -- turns a string into a list, so it can be iterated over with `foreach`
+ * `hash-code`
+ * `md5` -- generate the MD5 hash for a string
+ * `rex-match` -- search in strings using standard regular expressions
+ * `rex-replace-first`, `rex-replace-all`, `rex-split`
+ * `starts-with?`, `ends-with?` -- match a string against the start or end of another string
+ * `trim` -- removes initial and trailing whitespace
+ * `upper-case`, `lower-case` -- alter the letter case of strings
 
 ## Building
 
