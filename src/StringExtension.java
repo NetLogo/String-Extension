@@ -10,6 +10,7 @@ public class StringExtension extends DefaultClassManager
         pM.addPrimitive ( "ends-with?",                new EndsWith () ) ;
         pM.addPrimitive ( "explode",                   new Explode () ) ;
         pM.addPrimitive ( "from-file",                 new FromFile () ) ;
+        pM.addPrimitive ( "from-list",                 new FromList() ) ;
         pM.addPrimitive ( "hash-code",                 new HashCode () ) ;
         pM.addPrimitive ( "lower-case",                new LowerCase () ) ;
         pM.addPrimitive ( "message-digest-5",          new MessageDigest5 () ) ;
@@ -20,7 +21,5 @@ public class StringExtension extends DefaultClassManager
         pM.addPrimitive ( "starts-with?",              new StartsWith () ) ;
         pM.addPrimitive ( "trim",                      new Trim () ) ;
         pM.addPrimitive ( "upper-case",                new UpperCase () ) ;
-        pM.addPrimitive ( "from-list",                 new FromList() ) ;
-        pM.addPrimitive ( "to-list",                   new ToList() );
     }
 }
