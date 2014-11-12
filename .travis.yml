@@ -1,4 +1,4 @@
-# extensions for 5.0.x are supposed to support Java 5 and 6,
+# extensions for 5.x are supposed to support Java 5 and 6,
 # but Travis doesn't offer Oracle JDK 5 or 6.  so Travis won't
 # catch it if we do something that only works on Java 7.
 # oh well.  (we could try openjdk6, which Travis does have?
