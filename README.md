@@ -10,13 +10,15 @@ see https://github.com/NetLogo/String-Extension/releases
 
 The following reporters are provided:
 
- * `explode` -- turns a string into a list (of one-character strings)
+ * `to-list` -- turns a string into a list (of one-character strings)
+ * `from-list` -- turns a list into a string (works with all NetLogo datatypes)
  * `from-file` -- read an entire file into a string with one command
  * `from-list` -- turns a list into a string
  * `hash-code`
  * `md5` -- generate the MD5 hash for a string
- * `rex-match` -- search in strings using standard regular expressions
- * `rex-replace-first`, `rex-replace-all`, `rex-split`
+ * `rex-match?` -- search in strings using standard regular expressions and returns a boolean if a match is found.
+ * `rex-replace-first`, `rex-replace-all` returns a string in which the rex has been replaced
+ * `rex-split` returns a list split by the rex.
  * `starts-with?`, `ends-with?` -- match a string against the start or end of another string
  * `trim` -- removes initial and trailing whitespace
  * `upper-case`, `lower-case` -- alter the letter case of strings
