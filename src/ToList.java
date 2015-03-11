@@ -27,7 +27,7 @@ public class ToList extends DefaultReporter
         String s = args[0].getString();
         LogoListBuilder list = new LogoListBuilder();
         for (char c : s.toCharArray()){
-            list.add(c);
+            list.add(Character.toString(c));
         }
         return list.toLogoList();
     }
