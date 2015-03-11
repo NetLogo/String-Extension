@@ -24,6 +24,7 @@ public class FromList extends DefaultReporter{
         StringBuilder sb = new StringBuilder();
         for (Object o : input){
             sb.append(org.nlogo.api.Dump.logoObject(o));
+            sb.append(" ");
         }
         return sb.toString();
     }
