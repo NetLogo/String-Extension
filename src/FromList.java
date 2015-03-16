@@ -13,7 +13,7 @@ public class FromList extends DefaultReporter{
 
     @Override
     public Syntax getSyntax(){
-        return Syntax.reporterSyntax(new int[] { Syntax.ListType() },
+        return Syntax.reporterSyntax(new int[] { Syntax.ListType() , Syntax.StringType()},
                                      Syntax.StringType());
     }
 
@@ -21,10 +21,11 @@ public class FromList extends DefaultReporter{
     public Object report(Argument[] arg0, Context arg1)
              throws ExtensionException, LogoException {
         LogoList input = arg0[0].getList();
+        String delimiter = arg0[1].getString();
         StringBuilder sb = new StringBuilder();
         for (Object o : input){
             sb.append(org.nlogo.api.Dump.logoObject(o));
-            sb.append(" ");
+            sb.append(delimiter);
         }
         return sb.toString();
     }
