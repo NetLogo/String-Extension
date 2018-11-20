@@ -59,3 +59,6 @@ test: string.jar NetLogo.jar tests.txt lib/NetLogo-tests.jar lib/scalatest_2.9.2
 	  org.scalatest.tools.Runner -o \
 	  -R ../lib/NetLogo-tests.jar \
 	  -s org.nlogo.headless.TestExtensions)
+
+clean:
+	rm -rf classes *.jar *.gz
