@@ -25,7 +25,7 @@ class SplitOn extends Reporter
       val hayStack: String = args(1).getString
       var list: LogoListBuilder = new LogoListBuilder()
 
-      list.addAll(hayStack.split(regexNeedle))
+      list.addAll(hayStack.split(regexNeedle, -1))
       list.toLogoList
     }
 }
