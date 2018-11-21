@@ -15,16 +15,15 @@ class FromList extends Reporter {
       Syntax.reporterSyntax(
         right = List (Syntax.ListType),
         ret   = Syntax.StringType)
-      //Syntax.reporterSyntax(List(Syntax.ListType), Syntax.StringType)
     }
 
    @throws(classOf[ExtensionException])
    @throws(classOf[LogoException])
-    override def report(arg0: Array[Argument], arg1: Context): Object = {
-        val input: LogoList = arg0(0).getList
-        val sb: StringBuilder = new StringBuilder
-        input.foreach(sb ++= org.nlogo.api.Dump.logoObject(_))
-        sb.toString
+    override def report(args: Array[Argument], context: Context): Object = {
+      val input: LogoList = args(0).getList
+      val sb: StringBuilder = new StringBuilder
+      input.foreach(sb ++= org.nlogo.api.Dump.logoObject(_))
+      sb.toString
     }
 
 }

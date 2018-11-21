@@ -29,3 +29,4 @@ javacOptions ++= Seq("-g", "-deprecation", "-Xlint:all", "-Xlint:-serial", "-Xli
 netLogoPackageExtras += (baseDirectory(_ / "tests.txt").value, "tests.txt")
 
 //netLogoPackageExtras ++= demoNames.map(n => (demoDir.value / n, s"demos/$n"))
+

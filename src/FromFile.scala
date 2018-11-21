@@ -15,16 +15,16 @@ object FromFile {
   @throws(classOf[IOException])
   private def readFileAsString(filePath: String):String = {
     var outFileData = ""
-    val fileData: StringBuffer = new StringBuffer(10000)
-    val reader: BufferedReader = new BufferedReader(new FileReader(filePath))
+    val fileData = new StringBuffer(10000)
+    val reader = new BufferedReader(new FileReader(filePath))
     val buf: Array[Char] = Array.ofDim[Char](1024)
-    var numRead: Int = 0
-    do {
-      numRead = reader.read(buf)
-      if( numRead != -1 )
-        fileData.append(buf, 0, numRead)
-    } while (numRead != -1)
 
+    var numRead: Int = 0
+    numRead = reader.read(buf)
+    while (numRead != -1){
+      fileData.append(buf, 0, numRead)
+      numRead = reader.read(buf)
+    }
     reader.close()
     fileData.toString
   }
