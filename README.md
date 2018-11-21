@@ -15,7 +15,7 @@ The following reporters are provided:
  * `from-list` -- turns a list into a string
  * `hash-code`
  * `md5` -- generate the MD5 hash for a string
- * `rex-match` -- search in strings using standard regular expressions
+ * `rex-match?` -- search in strings using standard regular expressions
  * `rex-replace-first`, `rex-replace-all`, `rex-split`
  * `starts-with?`, `ends-with?` -- match a string against the start or end of another string
  * `trim` -- removes initial and trailing whitespace

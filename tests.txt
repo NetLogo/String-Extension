@@ -65,25 +65,25 @@ StringMD5
 
 StringRegExMatchSuccess
   extensions [string]
-  string:rex-match ".*\\|.*" "monkeys|are cool" => true
-  string:rex-match ".*\\|.*" "monkeys|are|awesome" => true
-  string:rex-match "monkeys" "monkeys" => true
-  string:rex-match "monkeys." "monkeys!" => true
-  string:rex-match ".*" "" => true
-  string:rex-match ".*" "monkeys" => true
-  string:rex-match ".?" "a" => true
-  string:rex-match ".?" "" => true
+  string:rex-match? ".*\\|.*" "monkeys|are cool" => true
+  string:rex-match? ".*\\|.*" "monkeys|are|awesome" => true
+  string:rex-match? "monkeys" "monkeys" => true
+  string:rex-match? "monkeys." "monkeys!" => true
+  string:rex-match? ".*" "" => true
+  string:rex-match? ".*" "monkeys" => true
+  string:rex-match? ".?" "a" => true
+  string:rex-match? ".?" "" => true
 
 StringRegExMatchFailure
   extensions [string]
-  string:rex-match ".*\\|.*" "monkeys are cool" => false
-  string:rex-match "monkeys" "monkeys!" => false
-  string:rex-match "monkeys." "monkeys" => false
-  string:rex-match "monkeys." "monkeys!!" => false
-  string:rex-match "monkeys" "imonkeys" => false
-  string:rex-match ".monkeys" "imonkey" => false
-  string:rex-match ".monkeys" "iimonkeys" => false
-  string:rex-match ".+" "" => false
+  string:rex-match? ".*\\|.*" "monkeys are cool" => false
+  string:rex-match? "monkeys" "monkeys!" => false
+  string:rex-match? "monkeys." "monkeys" => false
+  string:rex-match? "monkeys." "monkeys!!" => false
+  string:rex-match? "monkeys" "imonkeys" => false
+  string:rex-match? ".monkeys" "imonkey" => false
+  string:rex-match? ".monkeys" "iimonkeys" => false
+  string:rex-match? ".+" "" => false
 
 StringRegExReplaceAll
   extensions [string]

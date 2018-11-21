@@ -13,7 +13,7 @@ class StringExtension extends DefaultClassManager {
          pM.addPrimitive ( "hash-code",                 new HashCode )
          pM.addPrimitive ( "lower-case",                new LowerCase )
          pM.addPrimitive ( "message-digest-5",          new MessageDigest5 )
-         pM.addPrimitive ( "rex-match",                 new RegExMatch )
+         pM.addPrimitive ( "rex-match?",                new RegExMatch )
          pM.addPrimitive ( "rex-replace-all",           new RegExReplaceAll )
          pM.addPrimitive ( "rex-replace-first",         new RegExReplaceFirst )
          pM.addPrimitive ( "rex-split",                 new RegExSplit )
