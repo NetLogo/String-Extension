@@ -19,12 +19,5 @@ class LowerCase extends Reporter
     // take one string as input, report a string
     @throws(classOf[ExtensionException])
     @throws(classOf[LogoException])
-    def report(args: Array[Argument], context: Context): Object =
-    {
-        // use typesafe helper method from
-        // org.nlogo.api.Argument to access argument
-        // convert to lower case and return result
-        val s: String = args(0).getString.toLowerCase
-        s
-    }
+    def report(args: Array[Argument], context: Context): Object = args(0).getString.toLowerCase
 }

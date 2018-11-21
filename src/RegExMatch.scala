@@ -21,14 +21,10 @@ class RegExMatch extends Reporter
     @throws(classOf[LogoException])
     def report(args: Array[Argument], context: Context): Object =
     {
-        // use typesafe helper method from
-        // org.nlogo.api.Argument to access argument
-        val regexNeedle: String = args(0).getString
-        val hayStack: String = args(1).getString
+      val regexNeedle: String = args(0).getString
+      val hayStack: String = args(1).getString
+      val result = hayStack.matches(regexNeedle)
 
-        val result = hayStack.matches(regexNeedle)
-
-        result.asInstanceOf[AnyRef]
-
+      result.asInstanceOf[AnyRef]
     }
 }

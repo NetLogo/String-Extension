@@ -22,13 +22,7 @@ class HashCode extends Reporter
     @throws(classOf[LogoException])
     def report(args: Array[Argument], context: Context): Object =
     {
-
-        // use typesafe helper method from
-        // org.nlogo.api.Argument to access argument
-        // get string from args 0, get hashcode from that, convert
-        val s: String = args(0).getString
-        val n: Double = s.hashCode
-        val s2: String = n.toString
-        n.asInstanceOf[AnyRef]
+        val ds: Double = args(0).getString.hashCode
+        ds.asInstanceOf[AnyRef]
     }
 }

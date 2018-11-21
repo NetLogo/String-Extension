@@ -19,11 +19,5 @@ class UpperCase extends Reporter
 
     @throws(classOf[ExtensionException])
     @throws(classOf[LogoException])
-    def report(args: Array[Argument], context: Context): Object =
-    {
-        // use typesafe helper method from
-        // org.nlogo.api.Argument to access argument
-        val s = args(0).getString.toUpperCase
-        s
-    }
+    def report(args: Array[Argument], context: Context): Object = args(0).getString.toUpperCase
 }
