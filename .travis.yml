@@ -5,8 +5,13 @@
 # it didn't work for the full NetLogo build, but might work
 # for this.)
 
-jdk: oraclejdk7
-install:
-  - make
+language: scala
+
+jdk: oraclejdk8
+
+scala:
+  - 2.10.4
+  - 2.12.7
+
 script:
-  - make test
+  - sbt ++$TRAVIS_SCALA_VERSION test
