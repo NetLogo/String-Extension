@@ -1,6 +1,7 @@
 enablePlugins(org.nlogo.build.NetLogoExtension, org.nlogo.build.ExtensionDocumentationPlugin)
 
-netLogoVersion := "6.0.3"
+resolvers      += "netlogo" at "https://dl.cloudsmith.io/public/netlogo/netlogo/maven/"
+netLogoVersion := "6.2.0-d27b502"
 
 netLogoClassManager := "org.nlogo.extensions.string.StringExtension"
 
@@ -27,6 +28,3 @@ javacOptions ++= Seq("-g", "-deprecation", "-Xlint:all", "-Xlint:-serial", "-Xli
   "-encoding", "us-ascii")
 
 netLogoPackageExtras += (baseDirectory(_ / "tests.txt").value, "tests.txt")
-
-//netLogoPackageExtras ++= demoNames.map(n => (demoDir.value / n, s"demos/$n"))
-
