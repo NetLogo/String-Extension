@@ -3,8 +3,11 @@
 /tmp/
 /NetLogo.jar
 /NetLogoLite.jar
+string/
 /string.jar
 /string.jar.pack.gz
 /string.zip
 /project/project/
 target/
+extensions/
+.bundledFiles
