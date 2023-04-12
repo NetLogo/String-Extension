@@ -183,3 +183,10 @@ StringSplitOn
   string:split-on ",,," "A,,B" => ["A,,B"]
   string:split-on "" "" => [""]
   string:split-on "d" "" => [""]
+
+StringSplitOnNotRegEx
+  extensions [string]
+  string:split-on "." "" => [""]
+  string:split-on "r*" "testr*catr*dog" => ["test" "cat" "dog"]
+  string:split-on "*" "test*cat*dog" => ["test" "cat" "dog"]
+  string:split-on "[abc]" "testacatbdogcgiraffe[abc]bear" => ["testacatbdogcgiraffe" "bear"]

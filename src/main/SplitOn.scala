@@ -1,5 +1,7 @@
 package org.nlogo.extensions.string
 
+import java.util.regex.Pattern
+
 import org.nlogo.api.Argument
 import org.nlogo.api.Context
 import org.nlogo.api.Reporter
@@ -21,11 +23,11 @@ class SplitOn extends Reporter
     @throws(classOf[LogoException])
     def report(args: Array[Argument], context: Context): Object =
     {
-      val regexNeedle: String = args(0).getString
-      val hayStack: String = args(1).getString
-      val list: LogoListBuilder = new LogoListBuilder()
+      val pattern = Pattern.quote(args(0).getString)
+      val search  = args(1).getString
+      val list    = new LogoListBuilder()
 
-      list.addAll(hayStack.split(regexNeedle, -1))
+      list.addAll(search.split(pattern, -1))
       list.toLogoList
     }
 }
