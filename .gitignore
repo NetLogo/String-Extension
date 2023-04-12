@@ -11,3 +11,4 @@ string/
 target/
 extensions/
 .bundledFiles
+.bsp/
