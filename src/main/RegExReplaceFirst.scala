@@ -9,7 +9,7 @@ import org.nlogo.core.Syntax
 
 class RegExReplaceFirst extends Reporter {
 
-  def getSyntax(): Syntax =
+  def getSyntax: Syntax =
     Syntax.reporterSyntax(
       ret   = Syntax.StringType,
       right = List (Syntax.StringType, Syntax.StringType, Syntax.StringType),
@@ -18,9 +18,6 @@ class RegExReplaceFirst extends Reporter {
   @throws(classOf[ExtensionException])
   @throws(classOf[LogoException])
   def report(args: Array[Argument], context: Context): AnyRef = {
-    val regexNeedle: String = args(0).getString
-    val hayStack: String = args(1).getString
-    val replacement: String = args(2).getString
     args(1).getString.replaceFirst(args(0).getString, args(2).getString)
   }
 }

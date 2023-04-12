@@ -11,7 +11,7 @@ class HashCode extends Reporter
 {
     // take one string as input, reports the integer hash code
 
-    def getSyntax(): Syntax =
+    def getSyntax: Syntax =
     {
       Syntax.reporterSyntax(
         right = List(Syntax.StringType),

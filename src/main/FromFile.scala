@@ -14,7 +14,6 @@ import FromFile._
 object FromFile {
   @throws(classOf[IOException])
   private def readFileAsString(filePath: String):String = {
-    var outFileData = ""
     val fileData = new StringBuffer(10000)
     val reader = new BufferedReader(new FileReader(filePath))
     val buf: Array[Char] = Array.ofDim[Char](1024)
@@ -31,7 +30,7 @@ object FromFile {
 }
 
 class FromFile extends Reporter {
-  def getSyntax(): Syntax =
+  def getSyntax: Syntax =
     Syntax.reporterSyntax(
       right = List (Syntax.StringType),
       ret   = Syntax.StringType)

@@ -9,7 +9,7 @@ import org.nlogo.core.Syntax
 
 class StartsWith extends Reporter {
 
-  def getSyntax(): Syntax =
+  def getSyntax: Syntax =
     Syntax.reporterSyntax(
       left  = Syntax.StringType,
       ret   = Syntax.BooleanType,

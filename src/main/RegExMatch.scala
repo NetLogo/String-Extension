@@ -10,7 +10,7 @@ import org.nlogo.core.Syntax
 class RegExMatch extends Reporter
 {
     // rex-match  needle  haystack // reports true if the regular expression matches the string
-    def getSyntax(): Syntax =
+    def getSyntax: Syntax =
     {
       Syntax.reporterSyntax(
         right = List(Syntax.StringType, Syntax.StringType),

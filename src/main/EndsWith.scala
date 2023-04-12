@@ -10,7 +10,7 @@ import org.nlogo.core.Syntax
 class EndsWith extends Reporter
 {
     // INFIX  haystack ends-with needle
-    def getSyntax(): Syntax =
+    def getSyntax: Syntax =
     {
       Syntax.reporterSyntax(
         precedence = Syntax.NormalPrecedence,// Precedence

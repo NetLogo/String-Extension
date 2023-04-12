@@ -10,7 +10,7 @@ import org.nlogo.core.Syntax
 
 class SplitOn extends Reporter
 {
-    def getSyntax(): Syntax =
+    def getSyntax: Syntax =
     {
       Syntax.reporterSyntax(
         right = List(Syntax.StringType, Syntax.StringType),
@@ -23,7 +23,7 @@ class SplitOn extends Reporter
     {
       val regexNeedle: String = args(0).getString
       val hayStack: String = args(1).getString
-      var list: LogoListBuilder = new LogoListBuilder()
+      val list: LogoListBuilder = new LogoListBuilder()
 
       list.addAll(hayStack.split(regexNeedle, -1))
       list.toLogoList

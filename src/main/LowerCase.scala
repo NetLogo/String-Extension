@@ -9,7 +9,7 @@ import org.nlogo.core.Syntax;
 
 class LowerCase extends Reporter
 {
-    def getSyntax(): Syntax =
+    def getSyntax: Syntax =
     {
       Syntax.reporterSyntax(
         right = List (Syntax.StringType),

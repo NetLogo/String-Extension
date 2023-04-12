@@ -10,7 +10,7 @@ import java.security._
 
 class MessageDigest5 extends Reporter {
 
-  def getSyntax(): Syntax =
+  def getSyntax: Syntax =
     Syntax.reporterSyntax(
       right = List (Syntax.StringType),
       ret   = Syntax.StringType)

@@ -11,7 +11,7 @@ import org.nlogo.core.Syntax
 class Explode extends Reporter
 {
   // take one string as input, report a list
-    def getSyntax(): Syntax = {
+    def getSyntax: Syntax = {
       Syntax.reporterSyntax(
         right = List (Syntax.StringType), // list of arguments
         ret   = Syntax.ListType)          // return type

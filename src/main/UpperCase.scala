@@ -10,7 +10,7 @@ import org.nlogo.core.Syntax
 class UpperCase extends Reporter
 {
     // take one string as input, report a string
-    def getSyntax(): Syntax =
+    def getSyntax: Syntax =
     {
       Syntax.reporterSyntax(
         right = List (Syntax.StringType),

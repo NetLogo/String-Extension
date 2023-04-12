@@ -10,7 +10,7 @@ import org.nlogo.core.Syntax
 
 class RegExSplit extends Reporter {
 
-  def getSyntax(): Syntax =
+  def getSyntax: Syntax =
     Syntax.reporterSyntax(
       right = List (Syntax.StringType, Syntax.StringType),
       ret   = Syntax.ListType)
