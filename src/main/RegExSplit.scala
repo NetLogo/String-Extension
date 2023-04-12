@@ -18,12 +18,12 @@ class RegExSplit extends Reporter {
   @throws(classOf[ExtensionException])
   @throws(classOf[LogoException])
   def report(args: Array[Argument], context: Context): AnyRef = {
-    val hayStack: String = args(0).getString
-    val regexNeedle: String = args(1).getString
-    val resultArray: Array[String] = hayStack.split(regexNeedle)
-    val resultList: LogoListBuilder = new LogoListBuilder
+    val search = args(0).getString
+    val rex    = args(1).getString
+    val splits = search.split(rex, -1)
+    val list   = new LogoListBuilder
 
-    resultList.addAll(resultArray)
-    resultList.toLogoList
+    list.addAll(splits)
+    list.toLogoList
   }
 }
