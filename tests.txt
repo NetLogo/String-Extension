@@ -61,7 +61,8 @@ StringLowerCase
 
 StringMD5
   extensions [string]
-  string:message-digest-5 "apple" => "1f3870be274f6c49b3e31ac6728957f"
+  string:message-digest-5 "apple" => "1f3870be274f6c49b3e31a0c6728957f"
+  string:md5 "apple" => "1f3870be274f6c49b3e31a0c6728957f"
 
 StringRegExMatchSuccess
   extensions [string]
