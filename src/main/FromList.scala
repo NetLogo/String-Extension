@@ -10,19 +10,19 @@ import org.nlogo.core.LogoList
 
 class FromList extends Reporter {
 
-    override def getSyntax: Syntax = {
-      Syntax.reporterSyntax(
-        right = List (Syntax.ListType),
-        ret   = Syntax.StringType)
-    }
+  override def getSyntax: Syntax = {
+    Syntax.reporterSyntax(
+      right = List (Syntax.ListType),
+      ret   = Syntax.StringType)
+  }
 
-   @throws(classOf[ExtensionException])
-   @throws(classOf[LogoException])
-    override def report(args: Array[Argument], context: Context): Object = {
-      val input: LogoList = args(0).getList
-      val sb: StringBuilder = new StringBuilder
-      input.foreach(sb ++= org.nlogo.api.Dump.logoObject(_))
-      sb.toString
-    }
+  @throws(classOf[ExtensionException])
+  @throws(classOf[LogoException])
+  override def report(args: Array[Argument], context: Context): Object = {
+    val input: LogoList = args(0).getList
+    val sb: StringBuilder = new StringBuilder
+    input.foreach(sb ++= org.nlogo.api.Dump.logoObject(_))
+    sb.toString
+  }
 
 }
